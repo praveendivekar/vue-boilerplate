@@ -1,5 +1,5 @@
 module.exports = {
-  presets: [
-    '@vue/cli-plugin-babel/preset'
-  ]
-}
+  sourceType: "unambiguous",
+  presets: [["@vue/app", { modules: false }]],
+  plugins: ["@babel/plugin-syntax-dynamic-import"],
+};
